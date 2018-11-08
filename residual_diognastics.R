@@ -1,5 +1,9 @@
+# Requiring necessary packages
+
 library('fpp2')
 library('ggpubr')
+
+# A function for producing 6 different plots for residual diognastics of time series models.
 
 residual_run_seq_plot <- function(model){
   autoplot(residuals(model)) + 
