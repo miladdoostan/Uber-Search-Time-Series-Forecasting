@@ -1,5 +1,5 @@
-install.packages('fpp2')
-install.packages('seasonal')
+# A function for determining the strength of the trend and seasonality of a time series. It is written based on the formulation 
+# provided in  https://otexts.org/fpp2/seasonal-strength.html
 
 trend_seasonality_strength <- function(x){
   x_decomposed <- mstl(x)
