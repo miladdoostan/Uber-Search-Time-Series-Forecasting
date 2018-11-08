@@ -8,5 +8,6 @@ trend_seasonality_strength <- function(x){
   season_adj <- seasadj(x_decomposed)
   trend_strength <- max(0, (1 - var(rem)/var(season_adj)))
   seasonality_strength <- max(0, (1 - var(rem) / (var(season + rem))))
-  return (list(trend_strength=trend_strength, seasonality_strength=seasonality_strength))
+  return (list(trend_strength=trend_strength, 
+               seasonality_strength=seasonality_strength))
 }
