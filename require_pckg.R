@@ -1,4 +1,5 @@
-# requiring necessary packages
+# Requiring necessary packages for the forecast job
+
 library('fpp2')
 library('xts')
 library('data.table')
