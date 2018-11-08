@@ -11,3 +11,5 @@ trend_seasonality_strength <- function(x){
   return (list(trend_strength=trend_strength, 
                seasonality_strength=seasonality_strength))
 }
+
+
