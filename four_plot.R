@@ -1,7 +1,10 @@
+
+# Requiring necessary packages
 library('fpp2')
 library('ggpubr')
 
-# four plot
+# A function the produces four plots: run-seq plot, lag plot, histogram plot, and ACF plot of a time series.
+
 run_seq_plot <- function(x){
   autoplot(x, xlab='Time', ylab='x') + geom_point(pch=21, fill='red')
 }
