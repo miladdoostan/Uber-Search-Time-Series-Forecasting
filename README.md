@@ -10,6 +10,6 @@ and evaluation of the residuals. The R script containing these functions are pro
 | Benchmark Models    |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/benchmark_models.nb.html)|   
 | Linear Models |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/linear_models.nb.html)|
 |Exponential Smoothing Models | [Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/exp_smoothing_models.nb.html)|
-|ARIMA Models |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/uber_benchmark.nb.html)|
+|ARIMA Models |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/arima_models.nb.html)|
 |Decomposition Models|[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/uber_benchmark.nb.html)|
 |Dynamic Models|[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/uber_benchmark.nb.html)|
