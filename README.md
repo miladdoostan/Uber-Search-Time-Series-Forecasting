@@ -9,7 +9,7 @@ and evaluation of the residuals. The R script containing these functions are pro
 | EDA    | [Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/a0afddc7a8fa9d38ed5b675504df9bca3cf122e0/uber_eda.nb.html)| 
 | Benchmark Models    |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/a9c274a823014d0d8866ef9497e2704b683efaa3/benchmark_models.nb.html)|   
 | Linear Models |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/e1680677dc5fbb5ea4649251dae2f6a3b35adc89/uber_linear_models.nb.html)|
-|Exponential Smoothing Models | [Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/exp_smoothing_models.nb.html)|
+|Exponential Smoothing Models | [Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/8cf5c730aabd8ab2a508a36c7f23b14650b7eb85/exp_smoothing_models.nb.html)|
 |ARIMA Models |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/arima_models.nb.html)|
 |Decomposition Models|[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/decomposition_models.nb.html)|
 |Dynamic Models|[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/dynamic_models.nb.html)|
