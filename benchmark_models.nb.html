@@ -285,7 +285,7 @@ rwdrift_error &lt;- tsCV(y=uber_train, forecastfunction = rwf, drift=T, h=1)
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>As seen, the error metrics for average and seasonal naive models are very poor. For the naive and random walk with drift, the errors are very similar and not very bad. In order or see which model outperforms the other, I am going to use the cross-validation only for our top two choices.</p>
+<p>As seen, the naive model slightly outperforms the random walk with drift model. Therefore, I select this model. Now, let's take a look at the residuals.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBleHBsb3JpbmcgdGhlIHJlc2lkdWFscyBvZiB0aGUgbmFpdmUgbW9kZWxcbnJlc2lkdWFsX2Rpb2dub3N0aWNzX3Bsb3RzKG5haXZlX21vZGVsKVxuYGBgIn0= -->
