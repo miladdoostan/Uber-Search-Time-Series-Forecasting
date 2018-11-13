@@ -226,6 +226,7 @@ ggPacf(uber_train)</code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>The PACF plot shows considerable spikes at lags 1, 2, and 3. As a result, since there are spikes on lags 2 and 3, the random walk model with the drift might not be the most appropriate model. (although it may work well)</p>
+<p>Now, let's see what the strength of the trend and seasonality is by using trend_seasonality_strength function.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBmdXJ0aGVyIGludmVzdGlnYXRpb24gb2YgdGhlIHRyZW5kIGFuZCBzZWFzb25hbGl0eVxucHJpbnQodHJlbmRfc2Vhc29uYWxpdHlfc3RyZW5ndGgodWJlcl90cmFpbikpXG5gYGAifQ== -->
@@ -240,7 +241,7 @@ $seasonality_strength
 [1] 0.546694</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2dzZWFzb25wbG90KHViZXJfdHJhaW4pXG5gYGAifQ== -->
-<p>Now, let's take a look at the seasonality in the data.</p>
+<p>Let's take a look at the seasonality in the data usining two .</p>
 <pre class="r"><code>ggseasonplot(uber_train)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-plot-begin eyJjb25kaXRpb25zIjpbXSwiaGVpZ2h0Ijo0MzIuNjMyOSwic2l6ZV9iZWhhdmlvciI6MCwid2lkdGgiOjcwMH0= -->
@@ -255,6 +256,13 @@ $seasonality_strength
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>The trend_seasonality_strength function shows that the trend is significant. Also, interestingly, it shows that there is a weak to medium seasonality in the data. By looking at the seasonal plots, it could be understood that during summer months, specifically in the last three years, there is a peak (albeit, not a significant one).</p>
+<p> According to this analysis following conclusions could be reached:</p>
+<p> There is a significant trend in the data.</p>
+<p> The data is not in a random manner.</p>
+<p> A considerable auto-correlation exist in the data.</p>
+<p> The data reveals some seasonality.</p>
+<p> No transformation is required for the data.</p>
+<p> In the next notebook, I will build some benchmark models for forecasting. Stay tuned!</p>
 <!-- rnb-text-end -->
 
 <div id="rmd-source-code">LS0tDQp0aXRsZTogIkVEQSBvZiBVYmVyIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KYGBge3J9DQpzb3VyY2UoJ3ViZXJfZGF0YV9wcmVwcm9jZXNzaW5nLlInKQ0Kc291cmNlKCdlcnJvcl9tZXRyaWNzLlInKQ0KYGBgDQoNCkZpcnN0LCBJIHdpbGwgaW52ZXN0aWdhdGUgdGhlIHN0cnVjdHVyZSBvZiB0aGUgdWJlciBkYXRhIHNldCBieSB1dGlsaXppbmcgdGhlIGZvdXJfcGxvdCBmdW5jdGlvbi4NCg0KYGBge3J9DQpmb3VyX3Bsb3QodWJlcl90cmFpbikNCmBgYA0KQXMgc2VlbiBpbiB0aGUgdG9wLWxlZnQgcGxvdCwgdGhlIGRhdGEgc2hvd3MgYSBjb25zaWRlcmFibGUgdHJlbmQuIFRoZSBsb2NhdGlvbiBvZiB0aGUgc2VyaWVzIGNoYW5nZXMgb3ZlciB0aW1lLiBIb3dldmVyLCBpdCBzZWVtcyB0aGF0IHRoZSB2YXJpYXRpb24gb2YgdGhlIHNlcmllcyBpcyBhbG1vc3QgY29uc3RhbnQgKEkgd2lsbCBjaGVjayB0aGlzIHF1YW50aXRhdmVseSkuIEFzIGEgcmVzdWx0LCBJIGJlbGlldmUgbm8gQm94Y294IHRyYW5zZm9ybWF0aW9uIGlzIG5lY2Vzc2FyeSBmb3IgdGhpcyBzZXJpZXMuIA0KDQpgYGB7cn0NCiMgZXhwbG9yaW5nIGlmIGEgQm94Q294IHRyYW5zZm9ybWF0aW9uIGlzIG5lY2VzYXJ5IG9yIG5vdA0KcHJpbnQoQm94Q294LmxhbWJkYSh1YmVyX3RyYWluKSkNCmBgYA0KDQpUaGUgc3VnZ2VzdGVkIGxhbWJkYSB2YWx1ZSBmb3IgdGhlIEJveENveCB0cmFuc2Zvcm1hdGlvbiBpbiAxLjE5LiBUaGlzIHZhbHVlIGlzIHZlcnkgY2xvc2UgdG8gMSAoaS5lLiB0aGUgb3JpZ2luYWwgdGltZSBzZXJpZXMpLiBBcyBhIHJlc3VsdCwgSSBkZWNpZGUgbm90IHRvIGFwcGx5IGFueSB0cmFuZm9ybWF0aW9uIG9uIHRoaXMgdGltZSBzZXJpZXMuDQoNCg0KVGhlIHRvcC1yaWdodCBwbG90IGlzIHRoZSBsYWcgcGxvdC4gVGhlIHNpZ25pZmljYW50IGxpbmVhciBzdHJ1Y3R1cmUgaW4gdGhpcyBwbG90LCBkZW1vbnN0cmF0ZXMgdGhhdCAxKSB0aGUgc2VyaWVzIGlzIG5vdCBpbiBhIHJhbmRvbSBtYW5uZXIsIDIpIHRoZXJlIGlzIGEgc3Ryb25nIGF1cm9jb3JyZWxhdGlvbiBpbiB0aGUgc2VyaWVzLCAzKSBubyBvYnZpb3VzIG91dGxpZXJzIGV4aXN0IGluIHRoZSBkYXRhLg0KDQpUaGUgYm90dG9tLWxlZnQgcGxvdCwgc2hvd3MgdGhlIGRpc3RyaWJ1dGlvbiBvZiB0aGUgZGF0YS4gU2luY2UgdGhlIGRhdGEgaXMgbm90IHJhbmRvbSwgdGhpcyBoaXN0b2dyYW0gZG9lcyBub3QgcHJvdmlkZSBtdWNoIGluZm9ybWF0aW9uLiBIb3dldmVyLCB0aGUgaGlzdG9ncmFtIGNhbiBjb25maXJtIHRoYXQgbm8gc2lnbmlmaWNhbnQgb3V0bGllcnMgZXhpc3QgaW4gdGhlIGRhdGEuDQoNClRoZSBib3R0b20tcmlnaHQgcGxvdCBpcyB0aGUgQUNGIHBsb3QuIEFzIHNlZW4sIHRoZXJlIGlzIGEgc3Ryb25nIGF1dG8tY29ycmVsYXRpb24gd2l0aGluIHRoZSBkYXRhLiBTdWNoIGF1dG8tY29ycmVsYXRpb24gdHlwaWNhbGx5IHJlcHJlc2VudCBhIHJhbmRvbSB3YWxrIHNlcmllcyB3aXRoIGRyaWZ0LiBUaGlzIHNob3VsZCBiZSBpbnZlc3RpZ2F0ZWQgZnVydGhlci4gVGhlIEFDRiBwbG90IGRvZXMgbm90IHNob3cgYSBzdHJvbmcgc2Vhc29uYWxpdHkgd2l0aGluIHRoZSBkYXRhLiBUaGVyZWZvcmUsIEkgd2lsbCBxdWFudGl0YXZlbHkgZXhwbG9yZSB0aGUgc2Vhc29uYWxpdHkuDQoNCmBgYHtyfQ0KIyBmdXJ0aGVyIGludmVzdGlnYXRpb24gb24gdGhlIGF1dG9jb3JyZWxhdGlvbg0KZ2dQYWNmKHViZXJfdHJhaW4pDQoNCmBgYA0KVGhlIFBBQ0YgcGxvdCBzaG93cyBjb25zaWRlcmFibGUgc3Bpa2VzIGF0IGxhZ3MgMSwgMiwgYW5kIDMuIEFzIGEgcmVzdWx0LCBzaW5jZSB0aGVyZSBhcmUgc3Bpa2VzIG9uIGxhZ3MgMiBhbmQgMywgdGhlIHJhbmRvbSB3YWxrIG1vZGVsIHdpdGggdGhlIGRyaWZ0IG1pZ2h0IG5vdCBiZSB0aGUgbW9zdCBhcHByb3ByaWF0ZSBtb2RlbC4gKGFsdGhvdWdoIGl0IG1heSB3b3JrIHdlbGwpDQoNCmBgYHtyfQ0KIyBmdXJ0aGVyIGludmVzdGlnYXRpb24gb2YgdGhlIHRyZW5kIGFuZCBzZWFzb25hbGl0eQ0KcHJpbnQodHJlbmRfc2Vhc29uYWxpdHlfc3RyZW5ndGgodWJlcl90cmFpbikpDQpnZ3NlYXNvbnBsb3QodWJlcl90cmFpbikNCmdnc3Vic2VyaWVzcGxvdCh1YmVyX3RyYWluKQ0KYGBgDQpUaGUgdHJlbmRfc2Vhc29uYWxpdHlfc3RyZW5ndGggZnVuY3Rpb24gc2hvd3MgdGhhdCB0aGUgdHJlbmQgaXMgc2lnbmlmaWNhbnQuIEFsc28sIGludHJlc3RpbmdseSwgaXQgc2hvd3MgdGhhdCB0aGVyZSBpcyBhIHdlYWsgdG8gbWVkaXVtIHNlYXNvbmFsaXR5IGluIHRoZSBkYXRhLiBCeSBsb29raW5nIGF0IHRoZSBzZWFzb25hbCBwbG90cywgaXQgY291bGQgYmUgdW5kZXJzdG9vZCB0aGF0IGR1cmluZyBzdW1tZXIgbW9udGhzLCBzcGVjaWZpY2FsbHkgaW4gbGFzdCB0aHJlZSB5ZWFycywgdGhlcmUgaXMgYSBwZWFrIChhbGJlaXQsIG5vdCBhIHNpZ25pZmljYW50IG9uZSku</div>
