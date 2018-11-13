@@ -6,7 +6,7 @@ and evaluation of the residuals. The R script containing these functions are pro
 
 | Approach        | Notebook|
 | ------------- |:-------------:| 
-| EDA    | [Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/023ca2e4c58d97f7fb8559d919c68ce63a25ae97/uber_eda.nb.html)| 
+| EDA    | [Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/a0afddc7a8fa9d38ed5b675504df9bca3cf122e0/uber_eda.nb.html)| 
 | Benchmark Models    |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/benchmark_models.nb.html)|   
 | Linear Models |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/linear_models.nb.html)|
 |Exponential Smoothing Models | [Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/exp_smoothing_models.nb.html)|
