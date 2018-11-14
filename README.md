@@ -13,4 +13,4 @@ and evaluation of the residuals. The R script containing these functions are pro
 |ARIMA Models |[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/43840bc009aee42bffc39e0c1132be9663478b1a/arima_models.nb.html)|
 |Decomposition Models|[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/f0e28349ba381291953483147afa5b369dd952b1/decomposition_models.nb.html)|
 |Dynamic Models|[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/a05a959aad71d6c51a0f2794df4e66702a9d3da5/dynamic_models.nb.html)|
-|Neural Network Models|[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/master/neural_network_models.nb.html)|
+|Neural Network Models|[Notebook](http://htmlpreview.github.io/?https://github.com/miladdoostan/Uber-Search-Time-Series-Forecasting/blob/e2ea3839a77c0875e9484003d2b630ed1dc6289f/neural_network_models.nb.html)|
